@@ -1,0 +1,102 @@
+/* Basic Styling */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+.page{
+  text-align: center;
+  padding-left: 100px;
+}
+ 
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 5px;
+  display: flex;
+}
+/* Columns */
+.left-column {
+  width: 60%;
+  position: relative;
+}
+ 
+.right-column {
+  width: 75%;
+  margin-top: 25px;
+}
+/* Left Column */
+.left-column img {
+  width: 85%;
+  border: 2px solid #c1c1c1;
+  left: 0px;
+  top: 0px;
+}
+del{
+  font-size: 12px;
+  padding: 0 1%;
+}
+.offer{
+  color: green;
+}
+
+/* Product Description */
+.product-description {
+  
+  margin-bottom: 20px;
+}
+
+.product-description p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #000000;
+  line-height: 20px;
+}
+
+#product{
+  padding: 5px 0;
+}
+
+.color span{
+  padding: 0 100px;
+}
+.color{
+  padding-bottom: 5px;
+}
+
+.availability span{
+  padding: 0 60px;
+}
+
+.size span{
+  padding: 0 50px;
+}
+.size{
+  padding: 25px 0;
+}
+
+.quantity span{
+  padding: 0 75px;
+}
+.quantity {
+  padding-bottom: 30px;
+}
+
+.btn2 {
+  padding-left: 25px;
+  color: #000000;
+}
+.btn1{
+  color: #ffffff;
+  background-color: blue;
+}
+.btn input {
+  font-size: 15px;
+  border: 1px solid #c1c1c1;
+  margin: 0px;
+  padding: 12px 20px;
+  border-radius: 5px;
+}
+
+

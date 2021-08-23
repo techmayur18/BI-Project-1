@@ -1,0 +1,100 @@
+<html>
+<head>
+    <title>
+        ID Card generator
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+    <section class="w-100">
+        <header class="container d-flex bd-navbar">
+            <div class="navbar">ID Card Generator</div>
+        </header>
+        <div class="container d-flex containerBox">
+            <div class="secContainer section-left col-6 pt-3 pb-3">
+                <div class = title>
+                    <p>
+                        <b>Enter Student Details</b>
+                    </p>
+
+                </div>
+                <form onsubmit="return false" class="fBox">
+                    <div class="formEle font-icon">
+                        <label class="formLabel">
+                            Enter Name:
+                        </label>
+
+                        <input class="formIp" type="text" id="name" />
+                        <i class="fa fa-user fa-lg"></i>
+                    </div>
+                    <div class="formEle font-icon">
+                        <label class="formLabel">
+                            Enter College Name:
+                        </label>
+                        <input class="formIp" type="text" id="collegeName" />
+                        <i class="fa fa-university"></i>
+                    </div>
+                    <div class="formEle font-icon">
+                        <label class="formLabel">
+                            Enter Location:
+                        </label>
+                        <input class="formIp" type="text" id="location" />
+                        <i class="fa fa-address-book"></i>
+                    </div>
+                    <div class="formEle font-icon">
+                        <label for= "fileUpload" class="formLabel">
+                            Enter student's picture:
+                        </label>
+                        <input type="file" accept="image/*" onchange="loadFile(event)">
+                        <br><br>
+	                    <img id="output" style="width: 100px; height: 100px;" />
+                    </div>
+                    <div class="d-flex ">
+                        <button class="btn-generate" onclick="generateCard()">Generate Card</button>
+                    </div>
+
+                </form>
+            </div>
+            <div class="secContainer section-right col-6">
+                <div class="id-card-container" id="collegeCard">
+                    <div class="card">
+                        Generated ID Card
+                    </div>
+                    <div class="card-container">
+                        <div class="card-wrapper">
+                            <div class="user-card">
+                                <span class="photo">
+                                    <!-- <i class="fa fa-user"></i> -->
+                                    <img id="output"/>
+                                </span>
+                            </div>
+                            <div class="genInfo">
+                                <div class="card-element card-name">
+                                    <span class="card-title">Name:</span>
+                                    <span class="card-input" id="cardName"></span>
+                                </div>
+                                <div class="card-element college-name">
+                                    <span class="card-title">College Name:</span>
+                                    <span class="card-input" id="cardCollegeName"></span>
+                                </div>
+                                <div class="card-element college-name">
+                                    <span class="card-title">Location:</span>
+                                    <span class="card-input" id="cardLocation"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

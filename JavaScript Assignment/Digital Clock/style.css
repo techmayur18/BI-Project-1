@@ -1,0 +1,20 @@
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px 40px;
+    height: fit-content;
+    width: 400px;
+    font-size: 65px;
+    background-color: black;
+    box-sizing: border-box;
+    margin: 15% auto auto auto;
+    text-align: center;
+}
+    
+.contain{   
+    color: aliceblue;
+}
+
+button{
+    cursor: pointer;
+}
+
